@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(type/RobotoSerif.woff2) format('woff2')
+}
+
+body {
+    max-width: 800px;
+    color: #3d3d3d;
+    line-height: 1.5em;
+    margin: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+p {
+    font-family:"Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.variable {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 246;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Serif';
+    font-weight: 765;
+}
+
+.custom {
+    font-family: 'Roboto Serif', sans-serif;
+    font-variation-settings:  "wdth" 50, "opsz" 14, "wght" 600, "GRAD" 0;
+    font-size: 3em;
+}

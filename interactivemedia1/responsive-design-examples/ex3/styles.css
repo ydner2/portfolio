@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    line-height: 1.5em;
+    color: #333;
+}
+
+header, footer {
+    background-color: #620591;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Add rule here! */
+
+article p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+header, footer, main {
+    max-width: 1020px;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        gap: 20px;
+    }
+    article {
+        width: calc(50% - 10px);
+    }
+}

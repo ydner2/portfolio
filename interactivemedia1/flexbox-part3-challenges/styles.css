@@ -1,0 +1,311 @@
+/* Basic Resets */
+
+/* this is helpful for understanding how much
+room different elements are taking up, but not
+strictly necessary for this design */
+* { box-sizing: border-box; }
+
+h1, h2, h3, p, nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul { list-style-type: none; }
+
+a { text-decoration: none; }
+
+img { 
+    display: block;
+    max-width: 100%;
+}
+
+/* Mobile First Styles */
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+h1, h2, h3 { 
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+.wrap {
+    padding:0 20px;
+}
+
+/* Keeps all the content from becoming wider than 1200px */
+header, section, main, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header section */
+
+/* could be just .header, but I don't want to confuse
+the .header class from the header tag. div.header means
+the div with the class set to header. */
+div.header {
+    background-color:darkslategray;
+}
+
+/* Challenge 2 */
+header {
+    background-image: url(https://picsum.photos/500/150);
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+    /* Challenge 2a: Which flexbox properties need to be set 
+    to get the navigation to appear at the top
+    of the header. I used three declarations 
+    here to do this. */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header h1 {
+    padding: 15px;
+    background-color: rgba(48, 83, 83, 0.7);
+    color: #e9e9e9;
+    /* Challenge 2b:
+    How can you get the heading to display in the middle
+    of the remaining space? You need one declaration. */
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Challenge 1 */
+header nav ul {
+    /* What needs to be set here to get the
+    list items to line up in a row and centeron the screen? You will need two declarations. */
+    display: flex;
+    justify-content: center;
+    background-color: #507373;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #e9e9e9;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 1.2em;
+    border-right: 1px solid #fff;
+}
+
+nav ul li:last-of-type a {
+    border: none;
+}
+
+/* Top Section */
+
+div.top {
+    background-color: cornsilk;
+}
+
+.top section {
+    background-color: #e9deb4;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Challenge 3 */
+.top section ol {
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    /* Challenge 3a: What do you need here 
+    to get the list items to line up in a row? 
+    You need one declaration here.*/
+    display: flex;
+}
+
+/* Challenge 3b: What rule do you need to add 
+here to get the list items to take up an equal 
+amount of space, regardless of the width
+of the browser window? */
+
+.top section ol li{
+    flex: 1;
+}
+
+.top section ol li a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    /* Challenge 3c: 
+    How can you get the content inside
+    these anchor tags to center inside the
+    boxes? I used three declarations here. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Setting the background color of each of
+the anchor tags inside each sibling list item.
+You could also add a class to each anchor tag 
+and target them that way. */
+.top section ol li:nth-child(1) a {
+    background-color: #d3e3ff;
+}
+
+.top section ol li:nth-child(2) a {
+    background-color: #feffd3;
+}
+
+.top section ol li:nth-child(3) a {
+    background-color: #e8ffd3;
+}
+
+.top section ol li a {
+    color: darkslategray;
+    font-weight: 600;
+}
+
+.top section ol li a p:first-of-type {
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+}
+
+/* main section */
+
+div.main {
+    background-color: #a0630f;
+}
+/* Challenge 4 */
+/* Challenge 4a: The main part of the page needs
+to be flexible. By working with the
+flexbox rules, you can minimize the
+number of media queries you need.
+What rule do you need to add here that
+will make this possible. I used two 
+declarations in this rule. */
+
+.main main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main article {
+    background-color: #fff9f1;
+    padding: 20px;
+    /* Challenge 4b:
+    Set this element so that it wants
+    to be 350px wide, but it will grow at a 
+    ratio of 3 and shrink at a ratio of 2.
+    You can do this with one declaration. */
+    flex: 3 2 350px;
+}
+
+.main aside {
+    background-color: #fde2bf;
+    padding: 20px;
+    /* Challenge 4c:
+    Set this element so that it wants
+    to be 200px wide, but it will grow at a 
+    ratio of 2 and shrink at a ratio of 1.
+    You can do this with one declaration. */
+    flex: 2 1 200px;
+}
+
+.main aside h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main aside img {
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+}
+
+.main .adverts {
+    background-color: #6e4205;
+    padding: 20px;
+    
+    /* Challenge 4d:
+    Set this element so that it wants
+    to be 200px wide, but it will grow at a 
+    ratio of 1 but not shrink at all.
+    You can do this with one declaration. */
+    flex: 1 0 200px;
+
+    /* Challenge 5 */
+    /* This element also needs to display as a flexbox
+    so that it's children become flex items. It will
+    need to wrap and have a gap of 20px between
+    elements and center the content on the main
+    axis. You will need four declarations to do all this. */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.adverts div {
+    width: 150px;
+    background-color: #e9e9e9;
+    aspect-ratio: 1 / 1;
+    line-height: 150px;
+    text-align: center;
+}
+
+/* Footer Section */
+
+div.footer {
+    background-color:darkslategray;
+    padding: 0 20px;
+}
+
+.footer footer {
+    padding: 40px 0;
+    background-color: rgb(72, 89, 114);
+    color: #fff;
+    text-align: center;
+}
+
+@media only screen and (min-width: 790px) {
+    header {
+        /* Challenge 2c */
+        /* What do you need to set here to swap the navigation from
+        the top of the header to the bottom? */
+        flex-direction: column;
+        background-image: url(https://picsum.photos/1000/300);
+    }
+
+    .top section ol {
+        gap: 20px;
+        padding: 0 20px 20px 20px;
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .top section ol li a {
+        border-radius: 5px;
+    }
+    
+    /* Challenge 6a */
+    /* What rule do you need to add to set the
+    desired minimum width of the article inside 
+    the main element to 500px? This rule just 
+    needs one declaration. */
+    .main article{
+        flex-basis: 500px;
+    }
+    
+    /* Challenge 6b */
+    /* What three rules do you need to add to
+    change the order of the article, aside and 
+    .adverts elements inside the main element? 
+    You want the aside to display on the left, 
+    the article in the middle and the .adverts
+    on the right. Each of these rules just have
+    one short declaration. */
+    .main article { order: 2; }
+    .main aside { order: 1; }
+    .main .adverts { order: 3; }
+}

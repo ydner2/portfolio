@@ -1,0 +1,567 @@
+body{
+    background: linear-gradient(180deg, #F8FEE7 0%, #15171B 100%);
+}
+
+/* NAVIGATION AND HEADER */
+header{
+    background: #E3ECFF;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    margin-left: 50px;
+}
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: #A4B6DB;;
+}
+
+.logo .title{
+    flex: 2;
+}
+
+.logo a{
+    text-decoration: none;
+    display: block;
+    border-radius: 2px;
+    background: #A4B6DB;
+    color: #15171B;
+    font-family: "Proza Libre";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.dropdown{
+    position: absolute;
+    right: 5000px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    border-radius: 2px;
+    background: #A4B6DB;
+    color: #15171B;
+    font-family: "Proza Libre";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 2px solid black;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background: #e1daaf;
+
+    color: #594C02;
+}
+
+nav ul li ul li a{
+    background: #c2cfea;
+}
+
+nav:hover .dropdown {
+    right: -10px;
+}
+
+.starth1{
+    color: #15171B;
+    font-family: "Proza Libre";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+/* GENERAL BOX STUFF ALL PAGES */
+.box{
+    margin: 40px auto 40px auto;
+    max-width: 350px;
+
+    border-radius: 32px;
+    border: 4px solid #594C02;
+    background: #F8FEE7;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.box h1{
+    color: #8B7600;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box h2 {
+    color: #8B7600;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.box p{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #000;
+    font-family: "Proza Libre";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main a{
+    display: flex;
+    max-width: 216px;
+    max-height: 40px;
+    padding: 12px 12px;
+    margin: auto;
+    gap: 10px;
+
+    border-radius: 16px;
+    background: #594C02;
+
+    color: #E3ECFF;
+    text-align: center;
+    justify-content: center;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+main a:hover{
+    border-radius: 16px;
+    background: #F2D431;
+
+    color: #594C02;
+}
+
+.box ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.box li{
+    margin: none;
+    margin-bottom: 20px
+}
+
+.box li a{
+    font-size: 24px;
+}
+
+/* QUOTATION CONTENT AND OTHER */
+.left{
+    max-width: 416px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 33px;
+    background: linear-gradient(180deg, rgba(21, 23, 27, 0.00) 0%, rgba(21, 23, 27, 0.72) 68.27%), rgba(255, 250, 250, 0.90);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* , url(<path-to-image>) lightgray 50% / cover no-repeat, rgba(255, 250, 250, 0.90) */
+}
+
+.left h1{
+    margin-left: 20px;
+}
+
+.left p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.left h1{
+    color: #15171B;
+    font-family: "Proza Libre";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right{
+    max-width: 416px;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(21, 23, 27, 0.00) 0%, rgba(21, 23, 27, 0.72) 68.27%), rgba(255, 250, 250, 0.90);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* , url(<path-to-image>) lightgray 50% / cover no-repeat, rgba(255, 250, 250, 0.90) */
+}
+
+.right p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.right h1{
+    color: #15171B;
+    font-family: "Proza Libre";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.special{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.start{
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 700px;
+    border-radius: 32px;
+    border: 4px solid #594C02;
+    background: #F8FEE7;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.start h1{
+    color: #8B7600;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.start p{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #000;
+    font-family: "Proza Libre";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.start a{
+    font-size: 36px;
+    max-width: 500px;
+}
+
+.nobox{
+    margin: 150px 20px 150px 20px;
+    max-width: 700px;
+
+    border-radius: 32px;
+    border: 4px solid #594C02;
+    background: #F8FEE7;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nobox h1{
+    color: #8B7600;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nobox p{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    color: #000;
+    font-family: "Proza Libre";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.victory .nobox p{
+    text-align: left;
+}
+
+.nobox a{
+    font-size: 28px;
+    max-width: 500px;
+}
+
+.nobox img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.restart{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    max-width: 700px;
+
+    border-radius: 32px;
+    border: 4px solid #594C02;
+    background: #F8FEE7;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.restart h1{
+    color: #8B7600;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.restart p{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #000;
+    font-family: "Proza Libre";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.restart a{
+    font-size: 32px;
+    max-width: 500px;
+}
+
+/* FOOTER */
+footer{
+    max-width: 1200px;
+    background: #E3ECFF;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+
+footer p{
+    color: #15171B;
+    font-family: "Proza Libra", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+/* desktop */
+
+@media only screen and (min-width: 600px) {
+
+    body{
+        background: #15171B;
+    }
+/* NAVIGATION AND HEADER */
+
+    header {
+        position: static;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+        align-items: flex-end;
+    }
+
+    .logo{
+        flex: 1;
+    }
+    
+    nav{
+        flex: 2;
+    }
+
+    .logo a{
+        font-size: 24px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .menu img{
+        display: none;
+    }
+
+    nav ul li{
+        flex: 1;
+        position: relative;
+    }
+
+    nav ul li ul{
+        display: none;
+        gap: 0;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+    }
+
+    nav ul li:hover ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+    }
+
+
+
+/* MAIN LAYOUT */
+
+    .starth1{
+    color: #E3ECFF;
+    font-size: 64px;
+    font-weight: 400;
+
+    text-align: center;
+    }
+
+    main{
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+/* GENERAL BOX STUFF ALL PAGES */
+    .box{
+        flex: 2;
+    }
+
+/* QUOTATION CONTENT AND OTHER */
+
+    .special{
+    flex-direction: row;
+}
+
+    .nobox{
+        flex: 2;
+    }
+
+    .restart{
+        margin: auto;
+        flex: 1;
+    }
+
+/* FOOTER */
+
+    footer{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}

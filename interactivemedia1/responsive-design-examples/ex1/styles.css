@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    line-height: 1.5em;
+    color: #333;
+}
+
+header, footer {
+    background-color: darkorange;
+    padding: 40px 0;
+    text-align: center;
+}
+
+article p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+/* Add media query here! */
+@media screen and (min-width: 600px){
+    /* rules in here only apply if browser 600 px or wider */
+    main{
+        display: flex;
+        gap: 20px;
+    }
+
+    article {
+        width: calc(50%-10px); 
+    }
+}

@@ -1,0 +1,541 @@
+body{
+    margin: 0;
+    margin-top: 0;
+}
+
+/* homepage */
+/* navigation for homepage */
+
+nav {
+    background: linear-gradient(90deg, #DEE8F5 0%, #64D0FE 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.homenav{
+    position: relative;
+    padding: 80px;
+}
+
+.homenav ul {
+    /* hamburger */
+    position: absolute;
+    right: 5000px;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #0D3241;
+    border-radius: 16px 0 16px 16px;
+    font-family: "Noto Sans Georgian", sans-serif;
+    font-size: 20px;
+}
+
+.homenav ul li{
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.homenav ul li a{
+    background:#64D0FE;
+    background-color: #64D0FE;
+    border-radius: 4px;
+    padding: 20px;
+    text-decoration: none;
+    color: #0D3241;
+}
+
+.homenav ul li a:hover{
+    background: #DEE8F5;
+}
+
+.homenav div{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+
+.homenav div:hover ul {
+    right: -10px;
+}
+
+#index{
+    height: 114px;
+    background: linear-gradient(0deg, rgba(251, 250, 206, 0.67) 0%, rgba(251, 250, 206, 0.67) 100%), url(images/homebanner.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+}
+
+
+#index h1{
+    margin: auto;
+    color: #111112;
+    text-shadow: none;
+    font-variation-settings:
+    "wdth" 100;
+    font-style: normal;
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: auto 0 0 0;
+}
+
+/* cards for homepage */
+
+.card{
+    /* layout */
+    max-width: 324px;
+    flex-shrink: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    /* style */
+    border-radius: 34px;
+    border: 2px solid #5B99AF;
+    background: #FFF;
+    margin-bottom: 75px;
+}
+
+.card:first-of-type{
+    margin-top: 50px;
+}
+
+
+.imageh2swap{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.imageh2swap img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 35px 35px 0 0;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.card h2{
+    color: #111112;
+    font-family: "Noto Sans Georgian";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 5px 0 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 20px;
+}
+
+.card time{
+    color: #B3B3B3;
+    font-family: "Noto Sans Georgian";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 5px 0 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0;
+}
+
+.card p{
+    color: #000;
+    font-family: "Noto Sans Georgian";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0 5px 0 5px;
+}
+
+.card p a{
+    /* button style */
+    display: block;
+    margin: 40px 10px 36px 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: linear-gradient(90deg, #DEE8F5 0%, #64D0FE 100%);
+
+    /* text */
+    color: #111112;
+    font-family: "Noto Sans Georgian", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card p a:hover{
+    /* style */
+    background: linear-gradient(90deg, #8FB5E8 0%, #0D3241 100%);
+
+    /* text */
+    color: #FFF;
+}
+
+.card p a:active{
+    border-radius: 11px;
+    background: linear-gradient(90deg, #8FB5E8 0%, #0D3241 100%);
+
+    /* text */
+    color: #FFF;
+}
+
+/* footer */
+footer{
+    /* formatting */
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    padding-top: 40px;
+
+    /* styling */
+    background: linear-gradient(90deg, #DEE8F5 0%, #64D0FE 100%);
+}
+
+footer p{
+    color: #000;
+    font-family: "Noto Sans Georgian";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+footer p a{
+    font-family: "Noto Sans Georgian";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: normal;
+    text-decoration-line: none;
+    background:#64D0FE;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #64D0FE;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #0D3241;
+    flex: 1;
+}
+
+footer p a:hover{
+    /* style */
+    background: linear-gradient(90deg, #8FB5E8 0%, #0D3241 100%);
+
+    /* text */
+    color: #FFF;
+}
+
+/* Posts */
+
+/* navigation */
+.navpost ul{
+    font-family: "Noto Sans Georgian", sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navpost ul li a{
+    background:#64D0FE;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #64D0FE;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #0D3241;
+    flex: 1;
+}
+
+.navpost ul li a:hover{
+/* style */
+    background: linear-gradient(90deg, #8FB5E8 0%, #0D3241 100%);
+
+    /* text */
+    color: #FFF;
+}
+
+.navtext{
+    display: none;
+}
+
+/* general stuff */
+p {
+    color: #111112;
+    font-family: "Noto Sans Georgian";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #111112;
+    font-family: "Noto Sans Georgian";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+}
+
+h3 {
+    color: #111112;
+    font-family: "Noto Sans Georgian";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px;
+}
+
+time{
+    color: #969696;
+    font-family: "Noto Sans Georgian";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+}
+
+p a{
+    color: #64D0FE;
+    font-family: "Noto Sans Georgian";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    }
+
+.content img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+/* header stuff */
+header img {
+    max-width: 440px;
+}
+
+.post5header{
+    background-image: url(images/octopus-banner.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+}
+
+.post4header{
+    background-image: url(images/otter-banner.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+}
+
+.post3header{
+    background-image: url(images/seashell-banner.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+}
+
+.post2header{
+    background-image: url(images/seagull-banner.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+}
+
+.post1header{
+    background-image: url(images/turtle-banner.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+}
+
+h1 {
+    color: #FFF;
+    font-family: "Noto Sans Georgian";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 20px;
+    text-shadow: 2px 2px 6px #0D3241;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    body{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .homenav{
+        position: static;
+        padding: 0;
+    }
+
+    .homenav .hoverham{
+        position: static;
+    }
+
+    .homenav .hoverham ul{
+        position: static;
+        background: none;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;;
+    }
+
+    .hoverham img{
+        display: none;
+    }
+
+    .homenav .hoverham ul li{
+        flex: 1;
+    }
+
+
+    /* top stuff */
+
+    #index{
+    width: 1200px;
+    height: 300px;
+    flex-shrink: 0;
+    background: url(images/homebanner.jpg) lightgray 50% / cover no-repeat;
+
+    display: flex;
+    }
+
+    #index h1{
+    color: #111112;
+    font-family: "Encode Sans SC";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: auto auto auto auto;
+    }
+
+    /* card stuff */
+
+    .toprow {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .bottomrow {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 75px;
+    }
+
+    .card:first-of-type{
+        margin-top: 0;
+    }
+
+    .card{
+        flex: 1;
+        margin: 0;
+    }
+
+    header img {
+    max-width: 1200px;
+}
+
+    /* footer */
+    footer{
+        padding-top: 40px;
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    /* post stuff */
+
+    .navtext{
+        display: inline;
+    }
+
+    .content{
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .post5header{
+        height: 300px;
+    }
+
+    .post4header{
+        height: 300px;
+    }
+
+    .post3header{
+        height: 300px;
+    }
+
+    .post2header{
+        height: 300px;
+    }
+
+    .post1header{
+        height: 300px;
+    }
+}

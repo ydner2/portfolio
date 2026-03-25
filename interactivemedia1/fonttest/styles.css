@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'freightround_probook';
+    src: url('type/freightroundprobook-webfont.woff2') format('woff2'),
+         url('type/freightroundprobook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'freightround_prolight';
+    src: url('type/freightroundprolight-webfont.woff2') format('woff2'),
+         url('type/freightroundprolight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'freightround_probold';
+    src: url('type/freightroundprobold-webfont.woff2') format('woff2'),
+         url('type/freightroundprobold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'freightround_probook', Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.icons {
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: blue;
+}
+
+.icons:hover{
+    color: darkgreen;
+}

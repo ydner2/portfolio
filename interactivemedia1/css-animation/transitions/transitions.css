@@ -1,0 +1,82 @@
+
+/* Put example 1 CSS here */
+#ex1 {
+    /* add declarations here */
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 10px solid blue;
+    transition: width 500ms;
+}
+
+#ex1:hover {
+    /* add declarations here */
+    width: 500px;
+}
+
+/* Put example 2 CSS here */
+#ex2 {
+    /* add declarations here */
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: normal;
+    color: skyblue;
+    transition: all 2s;
+    height: 55px;
+}
+
+#ex2:hover {
+    /* add declarations here */
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: tomato;
+}
+
+/* Put example 3 CSS here */
+#ex3 {
+    background-color:lightgray;
+    padding: 20px;
+}
+
+#ex3 div {
+    background-color: mediumaquamarine;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    /* Add transition declarations here */
+    transition-property: width;
+    transition-duration: 3s;
+}
+
+#ex3 div:hover {
+    width: 600px;
+    cursor: pointer;
+}
+
+#ex3a {transition-timing-function: linear;}
+#ex3b {transition-timing-function: ease;}
+#ex3c {transition-timing-function: ease-in;}
+#ex3d {transition-timing-function: ease-out;}
+#ex3e {transition-timing-function: ease-in-out;}
+#ex3f {transition-timing-function: cubic-bezier(0.000, 0.925, 1.000, 0.015);}
+
+/* Put example 4 CSS here */
+
+#ex4 {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: #4068b2;
+    border: 5px solid black;
+    border-radius: 0px;
+    /* Add transition declarations here */
+    transition: border 1s ease, border-radius 2s ease;
+}
+
+#ex4:hover {
+    background-color: #ab0e0e;
+    border: 10px solid #7123ee;
+    border-radius: 20px;
+}

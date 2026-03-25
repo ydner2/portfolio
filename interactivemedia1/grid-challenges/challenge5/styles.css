@@ -1,0 +1,94 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding-top: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2, p {
+    margin: 0 0 20px 0;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    background-color: #ffcd04;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.a {
+    /* grid template for .a grid here! */
+    grid-template-areas: 
+    "a b b b b c c"
+    "d b b b b e e"
+    "d b b b b e e"
+    "d b b b b e e"
+    "d f f f f e e"
+    ;
+}
+
+.b {
+    /* grid template for .b grid here! */
+    grid-template-areas:
+    "a e e f f f f"
+    "d e e b b b b"
+    "d e e b b b b"
+    "d e e b b b b"
+    "d c c b b b b"
+    ;
+}
+
+.number {
+    font-size: 5vw;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    background-color: #ade0f0;
+    /* assign grid area here */
+    grid-area: a;
+}
+
+.grid img {
+    /* assign grid area here */
+    display: block;
+    grid-area: b;
+}
+
+.grid article {
+    padding: 20px;
+    /* assign grid area here */
+    grid-area: e;
+}
+
+.caption {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 4/1;
+    padding: 0 20px;
+    margin: 0;
+    font-style: italic;
+    /* assign grid area here */
+    grid-area: f;
+}
+
+.a article {
+    background-color: #ade0f0;
+}
+
+.b article {
+    background-color: #e366a6;
+}
+
+.a .caption {
+    background-color: #e366a6; 
+}
+
+.b .caption {
+    background-color: #ade0f0;
+}
