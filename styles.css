@@ -221,6 +221,10 @@ footer p a{
         display: none;
     }
 
+    #navbar {
+        display: flex !important;
+    }
+
     nav ul{
         display: flex;
         justify-content: end;

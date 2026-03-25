@@ -7,13 +7,16 @@
     let navcounter = 0;
 
         navtoggle.addEventListener("click", function(){
-            if(navcounter==0){
-                navbar.removeAttribute("class")
-                navcounter = 1;
-            } else{
-                console.log(navcounter);
-                navbar.className = "hiddennav";
-                navcounter = 0;
+            navbar.classList.toggle("hiddennav");
+        });
+
+        window.addEventListener("resize", function(){
+            if(window.innerWidth >= 600){
+                navbar.classList.remove("hiddennav");
             }
-        }); //end nav toggle event
+
+            if(window.innerWidth <= 600){
+                navbar.className="hiddennav";
+            }
+        }); //end window resize nav toggle
 })();
