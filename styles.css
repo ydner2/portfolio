@@ -1,5 +1,7 @@
 body{
     background: #FFFAE4;
+    max-width: 1200px;
+    margin: auto;
 }
 
 header{
@@ -72,6 +74,10 @@ hr{
     background: #534531;
     height: 10px;
     margin-bottom: 0;
+}
+
+a{
+        transition: background-color 1s ease;
 }
 
 /* greeting section */
